@@ -1,2 +1,0 @@
-# sibTest
-First testing program
