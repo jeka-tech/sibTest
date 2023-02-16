@@ -1,7 +1,5 @@
 
 <<<<<<< HEAD
-jkjhk
-=======
 
 from numpy import *
 
@@ -76,4 +74,5 @@ df1.to_excel("example.xlsx", 'Sheet1')
 
 
 
->>>>>>> c67ad30 (Просто попробовал закинуть работу с эксель.)
+=======
+>>>>>>> 541ac86 (Create frlv_1)
