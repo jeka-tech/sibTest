@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 
 from numpy import *
 
@@ -74,5 +73,3 @@ df1.to_excel("example.xlsx", 'Sheet1')
 
 
 
-=======
->>>>>>> 541ac86 (Create frlv_1)
