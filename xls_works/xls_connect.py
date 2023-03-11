@@ -1,68 +1,19 @@
+from openpyxl import load_workbook
 
+workbook = load_workbook('testPRG_vopr_db.xlsx')
+worksheet = workbook['db_vopr']
 
+data = []
 
-# import win32com.client
-# Excel = win32com.client.Dispatch("Excel.Application")
+for row in worksheet.rows:                              # перебираем строки в файле
+    row_cells = []                                      # заведем переменную для списка ячеек в строке
 
+    if row[1].value:                                    # если ячейка с вопросом не пустая (второй столбец имеет индекс 1), то...
+        for cell in row:                                # перебираем все ячейки в этой строке
+            row_cells.append(cell.value)                # и добавляем в список значения ячеек в этой строке
+        for cell in row:                                # повторно перебираем все ячейки в этой строке
+            if cell.fill.fgColor.rgb != '00000000':     # чтобы проверить, какая ячейка (ячейки) имеют заливку, отличную от белой (заливкой выделен правильный ответ)
+                row_cells.append(cell.column - 2)       # добавляем номер правильного варианта ответа в конец списка
+        data.append(row_cells)                          # и добавляем полученный список в основной массив данных
 
-# Import `os`
-# import os
-#
-# # Retrieve current working directory (`cwd`)
-# from pandas import ExcelFile
-#
-# cwd = os.getcwd()
-# cwd
-
-# Change directory
-# C:\Users\admin\PycharmProjects\pythonProject
-# os.chdir("/Users/admin/PycharmProjects/git_test")
-# /path/to/your/folder
-
-
-# List all files and directories in current directory
-# os.listdir('.')
-
-
-
-# Для Windows
-# python -m pip install -U pip setuptools
-# импорт библиотеки pandas
-import pandas as pd
-
-
-# Загружаем ваш файл в переменную `file` / вместо 'example' укажите название свого файла из текущей директории
-file = 'testPRG_vopr_db.xlsx'
-
-
-# Загружаем spreadsheet в объект pandas
-xl = pd.ExcelFile(file)
-print(xl)
-
-# Печатаем название листов в данном файле
-print(xl.sheet_names)
-# z = xl.sheet_names[0]
-#
-# # Загрузить лист в DataFrame по его имени: df1
-# df1 = xl.parse(z)
-# # print(df1)
-#
-#
-# # df1.to_excel("example.xlsx", 'Sheet1')
-#
-#
-# # Установим `XlsxWriter`
-# # pip install XlsxWriter
-#
-# # Указать writer библиотеки
-# df2 = pd.ExcelWriter('testPRG_vopr_db_new.xlsx')
-# #  df2 = df1
-# # Записать ваш DataFrame в файл
-# df1.to_excel(df2, 'Sheet1')
-#
-# # Сохраним результат
-# # df2.save()
-# df1.to_excel("example.xlsx", 'Sheet1')
-#
-#
-#
+print(data)
