@@ -1,11 +1,13 @@
+import os, config
 
 import sys
 from PyQt6 import uic, QtWidgets, QtCore
 from PyQt6.QtWidgets import QApplication
 from PyQt6.QtGui import QIcon
 
+os.chdir(config.project_path)  # переходим в корневую директорию проекта
 
-Form, _ = uic.loadUiType("WelcomeWindow.ui")
+Form, _ = uic.loadUiType(".\\gui\\WelcomeWindow.ui")
 
 
 class Ui(QtWidgets.QDialog, Form):
@@ -16,8 +18,8 @@ class Ui(QtWidgets.QDialog, Form):
         self.setWindowTitle('SibTest')
         #self.setStyleSheet("background-color: grey;")
 
-
-app = QApplication(sys.argv)
-window = Ui()
-window.show()
-app.exec()
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    window = Ui()
+    window.show()
+    app.exec()

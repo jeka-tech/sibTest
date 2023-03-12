@@ -1,9 +1,13 @@
+import os, config
 from openpyxl import load_workbook
+data = []
 
-workbook = load_workbook('testPRG_vopr_db.xlsx')
+os.chdir(config.project_path)       # переходим в корневую директорию проекта
+
+workbook = load_workbook('.\\xls_works\\testPRG_vopr_db.xlsx')
 worksheet = workbook['db_vopr']
 
-data = []
+
 
 for row in worksheet.rows:                              # перебираем строки в файле
     row_cells = []                                      # заведем переменную для списка ячеек в строке
