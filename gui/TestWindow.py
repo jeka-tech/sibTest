@@ -10,6 +10,7 @@ class Ui_2(QtWidgets.QDialog, Form):
     def __init__(self):
         super(Ui_2, self).__init__()
         self.setupUi(self)
+        self.setWindowTitle('SibTest')
         self.buttonGroup.buttonClicked.connect(self.choise)
         self.pushButton.clicked.connect(self.onMyButtonClick_2)
 
