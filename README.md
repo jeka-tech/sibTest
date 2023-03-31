@@ -6,4 +6,4 @@ Preparations before the start:
 2. Create file .gitignore in your local project directory
 3. Install virtual environment
 4. Install next packages:
-openpyxl, PyQt6
+openpyxl, PyQt6, pandas
