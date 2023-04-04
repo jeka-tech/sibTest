@@ -18,14 +18,12 @@ class Ui(QtWidgets.QDialog, Form):
         self.setupUi(self)
         self.setWindowIcon(QIcon('.\\gui\\logo.png'))
         self.setWindowTitle('SibTest')
-        self.lineEdit.setPlaceholderText('username')
-        self.pushButton.clicked.connect(self.UserName)
+        self.lineEdit.setPlaceholderText('user name')
         self.pushButton.clicked.connect(self.Open_TestWindow)
+        self.pushButton.clicked.connect(self.UserName)
 
     def UserName(self):
-       print('ClICKED')
-
-
+        print(self.lineEdit.text())
 
     def Open_TestWindow(self):
         self.open = Ui_2()
@@ -33,12 +31,10 @@ class Ui(QtWidgets.QDialog, Form):
         self.hide()
 
 
-
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = Ui()
     window.show()
     app.exec()
-
 
 
