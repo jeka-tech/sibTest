@@ -18,7 +18,7 @@
   </property>
   <property name="maximumSize">
    <size>
-    <width>600</width>
+    <width>604</width>
     <height>450</height>
    </size>
   </property>
@@ -33,15 +33,15 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>470</x>
+     <x>460</x>
      <y>390</y>
-     <width>101</width>
+     <width>111</width>
      <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>GOST Type AU</family>
+     <family>Segoe UI</family>
      <pointsize>10</pointsize>
     </font>
    </property>
@@ -52,15 +52,15 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>350</x>
+     <x>340</x>
      <y>390</y>
-     <width>101</width>
+     <width>111</width>
      <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>GOST Type AU</family>
+     <family>Segoe UI</family>
      <pointsize>10</pointsize>
     </font>
    </property>
@@ -72,14 +72,14 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>280</y>
+     <y>270</y>
      <width>251</width>
-     <height>21</height>
+     <height>41</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>GOST Type AU</family>
+     <family>Segoe UI</family>
      <pointsize>12</pointsize>
     </font>
    </property>
@@ -98,7 +98,7 @@
    </property>
    <property name="font">
     <font>
-     <family>GOST Type AU</family>
+     <family>Segoe UI</family>
      <pointsize>12</pointsize>
     </font>
    </property>
@@ -127,13 +127,13 @@
     <rect>
      <x>30</x>
      <y>20</y>
-     <width>275</width>
-     <height>25</height>
+     <width>441</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>GOST Type AU</family>
+     <family>Segoe UI</family>
      <pointsize>12</pointsize>
     </font>
    </property>
@@ -150,6 +150,18 @@
      <height>151</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
    <property name="widgetResizable">
     <bool>true</bool>
    </property>
@@ -158,16 +170,23 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>526</width>
-      <height>336</height>
+      <width>524</width>
+      <height>386</height>
      </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+</string>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
       <widget class="QRadioButton" name="radioButton">
        <property name="font">
         <font>
-         <family>GOST Type AU</family>
+         <family>Segoe UI</family>
          <pointsize>10</pointsize>
         </font>
        </property>
@@ -180,7 +199,7 @@
       <widget class="QRadioButton" name="radioButton_2">
        <property name="font">
         <font>
-         <family>GOST Type AU</family>
+         <family>Segoe UI</family>
          <pointsize>10</pointsize>
         </font>
        </property>
@@ -193,7 +212,7 @@
       <widget class="QRadioButton" name="radioButton_3">
        <property name="font">
         <font>
-         <family>GOST Type AU</family>
+         <family>Segoe UI</family>
          <pointsize>10</pointsize>
         </font>
        </property>
@@ -206,7 +225,7 @@
       <widget class="QRadioButton" name="radioButton_4">
        <property name="font">
         <font>
-         <family>GOST Type AU</family>
+         <family>Segoe UI</family>
          <pointsize>10</pointsize>
         </font>
        </property>
@@ -219,7 +238,7 @@
       <widget class="QRadioButton" name="radioButton_5">
        <property name="font">
         <font>
-         <family>GOST Type AU</family>
+         <family>Segoe UI</family>
          <pointsize>10</pointsize>
         </font>
        </property>
@@ -232,7 +251,7 @@
       <widget class="QRadioButton" name="radioButton_6">
        <property name="font">
         <font>
-         <family>GOST Type AU</family>
+         <family>Segoe UI</family>
          <pointsize>10</pointsize>
         </font>
        </property>
@@ -245,7 +264,7 @@
       <widget class="QRadioButton" name="radioButton_7">
        <property name="font">
         <font>
-         <family>GOST Type AU</family>
+         <family>Segoe UI</family>
          <pointsize>10</pointsize>
         </font>
        </property>
@@ -258,7 +277,7 @@
       <widget class="QRadioButton" name="radioButton_8">
        <property name="font">
         <font>
-         <family>GOST Type AU</family>
+         <family>Segoe UI</family>
          <pointsize>10</pointsize>
         </font>
        </property>
@@ -271,7 +290,7 @@
       <widget class="QRadioButton" name="radioButton_9">
        <property name="font">
         <font>
-         <family>GOST Type AU</family>
+         <family>Segoe UI</family>
          <pointsize>10</pointsize>
         </font>
        </property>
@@ -284,7 +303,7 @@
       <widget class="QRadioButton" name="radioButton_10">
        <property name="font">
         <font>
-         <family>GOST Type AU</family>
+         <family>Segoe UI</family>
          <pointsize>10</pointsize>
         </font>
        </property>
