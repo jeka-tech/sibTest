@@ -1,7 +1,9 @@
+import os, config
 from PyQt6 import uic, QtWidgets
 
+os.chdir(config.project_path)  # переходим в корневую директорию проекта
 
-Form, _ = uic.loadUiType('TestWindow.ui')
+Form, _ = uic.loadUiType('.\\gui\\TestWindow.ui')
 
 otvet = "0"
 

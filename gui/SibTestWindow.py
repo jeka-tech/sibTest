@@ -5,7 +5,7 @@ import sys
 from PyQt6 import uic, QtWidgets, QtCore
 from PyQt6.QtWidgets import QApplication
 from PyQt6.QtGui import QIcon
-from TestWindow import Ui_2
+from gui.TestWindow import Ui_2
 
 os.chdir(config.project_path)  # переходим в корневую директорию проекта
 
